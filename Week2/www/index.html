@@ -31,20 +31,138 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
+        <div data-role="page" id="main">
             <ul data-role="listview" data-theme="a" >
-           <li>test a</li>
-           <li>test 2</li>
-           <li>test 3</li>
-           <li>test 4</li>
-         </ul>
+                <li><a href="#films" data-transition="flip">Films</a></li>
+                <li><a href="#series" data-transition="pop">Series</a></li>
+                <li><a href="#tekenfilms" data-transition="slideup">Tekenfilms</a></li>
+                <li><a href="#settings" data-transition="slideup">Settings</a></li>
+             </ul>
+        </div>
+
+        <div data-role="page" id="settings">
+            <ul data-role="listview" data-theme="a" >
+               <li>Settings<span><a href="#main" class="backButton">Back</a></span></li>
+                   <ul data-role="listview" data-autodividers="true">
+                        
+                    </ul>
+             </ul>
 
         </div>
+
+
+        <div data-role="page" id="films">
+            <ul data-role="listview" data-theme="a" >
+               <li>Films<span><a href="#main" class="backButton">Back</a></span></li>
+                   <ul data-role="listview" data-autodividers="true">
+                        <li><a href="#armaggedon" class="box">Armaggedon</a></li>
+                        <li><a href="#" class="box">Apen in het bos</a></li>
+                        <li><a href="#" class="box">Apen in het bos 2</a></li>
+                        <li><a href="#" class="box">Bananen the movie</a></li>
+                        <li><a href="#" class="box">Chocolade advonturen 1</a></li>
+                        <li><a href="#" class="box">Chocolade advonturen 2</a></li>
+                        <li><a href="#" class="box">Chocolade advonturen 3</a></li>
+                        <li><a href="#" class="box">Piet piraat</a></li>
+                        <li><a href="#" class="box">Snorlax</a></li>
+                    </ul>
+             </ul>
+
+        </div>
+
+        <div data-role="page" id="series">
+            <ul data-role="listview" data-theme="a" >
+               <li>Series<span><a href="#main" class="backButton">Back</a></span></li>
+               <ul data-role="listview" data-autodividers="true">
+                    <li><a href="#Aloalo" class="box">Alo alo</a></li>
+                    <li><a href="#" class="box">Back to the forest</a></li>
+                    <li><a href="#" class="box">Bonono</a></li>
+                    <li><a href="#" class="box">Delarus</a></li>
+                    <li><a href="#" class="box">Domino day</a></li>
+                    <li><a href="#" class="box">Game of Thrones</a></li>
+                    <li><a href="#" class="box">V for Vendetta de serie</a></li>
+                    <li><a href="#" class="box">Walking with Stijn Smulders</a></li>
+                </ul>
+             </ul>
+             <div data-role="popup" id="popupLogin" data-theme="a" class="ui-corner-all popup">
+                <form>
+                    <div style="padding:10px 20px;">
+                        <h3>Please sign in</h3>
+                        <label for="un" class="ui-hidden-accessible">Username:</label>
+                        <input type="text" name="user" id="un" value="" placeholder="username" data-theme="a">
+                        <label for="pw" class="ui-hidden-accessible">Password:</label>
+                        <input type="password" name="pass" id="pw" value="" placeholder="password" data-theme="a">
+                        <button type="submit" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-check">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div data-role="page" id="tekenfilms">
+            <ul data-role="listview" data-theme="a" >
+               <li>Tekenfilms<span><a href="#main" class="backButton">Back</a></span></li>
+               <ul data-role="listview" data-autodividers="true">
+                    <li><a href="#AdaywithStijn" class="box">A day with Stijn</a></li>
+                    <li><a href="#" class="box">Alfred judecus Stijn</a></li>
+                    <li><a href="#" class="box">Back to Stijn</a></li>
+                    <li><a href="#" class="box">Belle with Stijn</a></li>
+                    <li><a href="#" class="box">De avonturen van Stijn Smulders in het bos</a></li>
+                    <li><a href="#" class="box">Linksonder in the League</a></li>
+                    <li><a href="#" class="box">Stien Stein en Sten</a></li>
+                    <li><a href="#" class="box">Stijn Smulders all over the world</a></li>
+                </ul>
+             </ul>
+        </div>
+
+        <div data-role="page" id="armaggedon">
+            <ul data-role="listview" data-theme="a" >
+               <li>Armaggedon<span><a href="#films" class="backButton">Back</a></span></li>
+             </ul>
+            <div class="pageContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non dapibus tortor, vitae vulputate purus. Donec non tempus odio, ac molestie mi. Nullam sed urna et enim convallis aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet erat in erat facilisis fermentum sit amet at nibh. Nunc commodo, dolor sed viverra pharetra, dui lorem molestie ex, eget elementum nisl sem sit amet erat. Nullam id ipsum mollis, placerat neque vitae, dictum lorem. Nunc vel sapien ligula. Phasellus fermentum magna vel elementum maximus. In in mollis sapien. Sed mattis justo vitae diam porttitor, nec rhoncus urna tristique. Proin volutpat auctor quam vel placerat.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+            </div>
+        </div>
+
+        <div data-role="page" id="Aloalo">
+            <ul data-role="listview" data-theme="a" >
+               <li>Alo alo<span><a href="#series" class="backButton">Back</a></span></li>
+             </ul>
+            <div class="pageContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non dapibus tortor, vitae vulputate purus. Donec non tempus odio, ac molestie mi. Nullam sed urna et enim convallis aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet erat in erat facilisis fermentum sit amet at nibh. Nunc commodo, dolor sed viverra pharetra, dui lorem molestie ex, eget elementum nisl sem sit amet erat. Nullam id ipsum mollis, placerat neque vitae, dictum lorem. Nunc vel sapien ligula. Phasellus fermentum magna vel elementum maximus. In in mollis sapien. Sed mattis justo vitae diam porttitor, nec rhoncus urna tristique. Proin volutpat auctor quam vel placerat.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+            </div>
+        </div>
+
+        <div data-role="page" id="AdaywithStijn">
+            <ul data-role="listview" data-theme="a" >
+               <li>A day with Stijn<span><a href="#tekenfilms" class="backButton">Back</a></span></li>
+             </ul>
+            <div class="pageContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non dapibus tortor, vitae vulputate purus. Donec non tempus odio, ac molestie mi. Nullam sed urna et enim convallis aliquet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam sit amet erat in erat facilisis fermentum sit amet at nibh. Nunc commodo, dolor sed viverra pharetra, dui lorem molestie ex, eget elementum nisl sem sit amet erat. Nullam id ipsum mollis, placerat neque vitae, dictum lorem. Nunc vel sapien ligula. Phasellus fermentum magna vel elementum maximus. In in mollis sapien. Sed mattis justo vitae diam porttitor, nec rhoncus urna tristique. Proin volutpat auctor quam vel placerat.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+
+            <p>Nullam vehicula, tellus vitae volutpat tincidunt, neque dolor viverra felis, eu varius ligula justo at mauris. Sed erat erat, feugiat a auctor sed, tempus non ligula. Vivamus ultricies aliquam consectetur. Morbi at elit vitae magna hendrerit tristique sit amet a enim. Nullam eget dolor iaculis, convallis enim ac, venenatis odio. Etiam vestibulum, nunc id maximus varius, justo risus sodales purus, tincidunt ullamcorper magna odio maximus diam. Maecenas ut ipsum sodales, congue libero in, semper velit. Nunc in tellus ac ligula vulputate interdum.</p>
+            </div>
+        </div>
+
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/mobile/latest/jquery.mobile.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script type="text/javascript">
             app.initialize();
         </script>

@@ -59,6 +59,22 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
+.backButton{
+    color: #fff!important;
+    text-decoration: none;
+    text-align: right;
+    float: right;
+}
+
+.pageContent{
+    width:95%;
+    margin: 0 auto;
+}
+
+.backButton:hover{
+    text-decoration: underline;
+}
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
